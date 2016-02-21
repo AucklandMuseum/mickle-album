@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Gareth de Walters -- Production, UX, HTML, CSS -- @gdewalters
+    Kelly Dix -- Production, UX, Image selection, copywriting -- @kelly_dix
+    Holly Grover -- Production, UX, Image design -- @holigro
+    Peter Haywood -- Concept design, icon design
+    Nils Pokel -- Image design -- @nilscreates
+    Zoe Richardson -- Pictorial Librarian
+    Shaun Higgins -- Curator, Pictorial
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
