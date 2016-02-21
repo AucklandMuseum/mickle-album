@@ -373,9 +373,10 @@
         }
 
         .upper-left-viewport {
-          position: relative;
+          position: absolute;
           top: 0;
           left: 0;
+          z-index: 1000;
         }
 
         .upper-right {
@@ -998,6 +999,7 @@
                 background-image: url('../media/img/03-fundraising/bg-wartime-work-2048x1536.jpg');
             }
 
+                /* Adapted from http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
                 blockquote {
                     font-family: Georgia, serif;
                     /* font-size: 18px; */
