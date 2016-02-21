@@ -659,61 +659,6 @@
             margin: 0.75em 0 0 0;
         }
 
-
-        /* Adapted from code by UXMachine - http://codepen.io/UXMACHINE/pen/raEvJe */
-        .welcome-header {
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            background: linear-gradient(  rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0.6)  );
-            color: white;
-            min-width: 50%;
-            padding: 30px;
-            text-align: center;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-        }
-
-        .welcome-header h1, .welcome-header h2 {
-            letter-spacing: 0.05em;
-        }
-        .welcome-header h1 {
-            font-family: 'LeagueGothicRegular', 'Helvetica Neue', Helvetica, sans-serif;
-        }
-
-        .welcome-header p {
-            font-family: Georgia, Times, 'Times New Roman', serif;
-        }        
-
-        .welcome-header h2 {
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            font-family: "AucklandMuseumRegular";
-            font-weight: normal;
-            font-size: 1.44em;
-            overflow: hidden;
-            margin: -30px -33px 0 -33px;
-            position: absolute;
-            width: calc( 100% + 6px );
-            text-transform: uppercase;
-        }
-        .welcome-header h2:before, .welcome-header h2:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            margin-top: -2px;
-            border-top: 3px solid white;
-            top: 50%;
-        }
-        .welcome-header h2:before {
-            -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-            margin-left: -30px;
-        }
-        .welcome-header h2:after {
-            margin-left: 30px;
-        }
-
         /* Home
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1052,6 +997,39 @@
             #section12 {
                 background-image: url('../media/img/03-fundraising/bg-wartime-work-2048x1536.jpg');
             }
+
+                blockquote {
+                    font-family: Georgia, serif;
+                    /* font-size: 18px; */
+                    font-style: italic;
+                    width: 500px;
+                    margin: 0.25em 0;
+                    padding: 0.25em 40px;
+                    line-height: 1.45;
+                    position: relative;
+                    color: #383838;
+                }
+
+                blockquote:before {
+                    display: block;
+                    content: "\201C";
+                    font-size: 80px;
+                    position: absolute;
+                    left: -20px;
+                    top: -20px;
+                    color: #7a7a7a;
+                }
+
+                blockquote cite {
+                    color: #222;
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 5px;
+                }
+                 
+                blockquote cite:before {
+                    content: "\2014 \2009";
+                }
 
             #section13 {
                 background-image: url('../media/img/03-fundraising/bg-letters-of-thanks-2048x1536.jpg');
