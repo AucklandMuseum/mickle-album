@@ -299,6 +299,10 @@
                   padding-top: 15%
                 }
 
+                .readable-height-low {
+                  padding-top: 50%
+                }
+
                 .readable-width {
                   max-width: 650px;
                 }
@@ -390,9 +394,7 @@
           left: 0;
         }
         .lower-right {
-          bottom: 0%;
-          right: 0%;
-          position: absolute;
+    
 
         }
 
@@ -565,10 +567,8 @@
             }
 
             .icon-info {
-                position: relative;
-                vertical-align: bottom;
                 width: 50px;
-                padding: 0;
+                padding: 0.75rem;
             }
 
     /* Backgrounds - general set up
@@ -605,7 +605,7 @@
                 height: 100vh;
             }
 
-            .myVideo {
+            .play-video {
                 position: relative;
                 right: 0;
                 bottom: 0;
@@ -917,6 +917,18 @@
                     z-index: 3;
                 }
 
+                .gallery-trigger-soldiers img.child {
+                    position: relative;
+                    width: 100px;
+                    height: 150px;
+                    /* transform: translateZ(.25px) scale(0.55) translateX(0%) translateY(25%) rotate(0deg); */
+                    padding: 10px;
+                    border-radius: 5px;
+                    background: rgba(240,230,220, .7);
+                    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+                    z-index: 3;
+                }
+
                     /*
                     .gallery-trigger img.child2 {
                     transform: translateZ(.15px) scale(.85) translateX(-120%) translateY(-10%) rotate(-3deg);
@@ -938,10 +950,22 @@
                         width: 220px;
                     }
 
-                    .gallery-trigger figcaption {
-                        color: 222;
+                    .gallery-trigger-soldiers figure {
+                        display: block;
+                        float: left;
+                        margin: 0.75em 5px 5px 0;
+                        width: 220px;
                     }
 
+                    .gallery-trigger figcaption {
+                        color: 222;
+                        display: none;
+                    }
+
+                    .gallery-trigger-soldiers figcaption {
+                        color: 222;
+                        display: none;
+                    }
 
             /* Birkenhead’s contribution to the war */
             #section7 {
