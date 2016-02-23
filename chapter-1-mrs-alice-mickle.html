@@ -27,6 +27,13 @@
                     afterRender: function(){
                         //playing the video
                         $('video').get(0).play();
+
+                        $(".paneltrigger").toggle(function () {
+                            $(this).parent().animate({right:'0px'}, {queue: false, duration: 500});
+                        }, function () {
+                            $(this).parent().animate({right:'-420px'}, {queue: false, duration: 500});
+                        });
+
                     }
 
                 });
@@ -89,7 +96,7 @@
 
                                         <h1 class="fade-in-slow">Mrs Alice Mickle</h1>
 
-                                        <p class="fade-in-slow">Mrs Alice Mickle and her husband moved to Birkenhead in 1912 (or 1911?). Dr Arthur Mickle worked as a doctor in the borough. He also had a consulting room and surgery in the nearby suburb of Northcote. As the wife of the local doctor, Alice knew many of the young men who left for war.</p> 
+                                        <p class="fade-in-slow">Mrs Alice Mickle and her husband moved to Birkenhead in 1911 or 1912. Dr Arthur Mickle worked as a doctor in the borough. He also had a consulting room and surgery in the nearby suburb of Northcote. As the wife of the local doctor, Alice knew many of the young men who left for war.</p> 
                                         <p class="fade-in-slow">Like many other New Zealand women, Alice contributed to the war effort by sending gifts to soldiers. “Practically as soon as the war broke out,” wrote a journalist for the <em>Auckland Star</em>, “Mrs Mickle began to make up parcels to send away, and as time went on and she knew exactly where to send them and precisely what was most needed, her activities doubled and trebled.”</p>
                                     
                                     </section>
@@ -108,10 +115,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-right about-image  font-small"> 
-                    <span>Mrs Alice Mickle</span><br />
-                    Portrait of Alice Mickle from the inside cover of her souvenir album. Photographer unknown.<br />
-                    <cite>Auckland War Memorial Museum - Tāmaki Paenga Hira.</cite>
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>Mrs Alice Mickle</h6>
+                        <p class="pi-description">Portrait of Alice Mickle from the inside cover of her souvenir album. Photographer unknown.</p>
+                        <p class="pi-source"><cite>Auckland War Memorial Museum - Tāmaki Paenga Hira.</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div>
@@ -156,10 +168,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-left about-image font-small"> 
-                    <span>F3897 - [Picnic by Peregine to the North Shore]. (1912)</span><br />
-                    The ferry Peregrine stops at Birkenhead to collect new passengers in the summer of 1912.<br />
-                    <cite>From material preserved and made available by Ngā Taonga Sound &amp; Vision</cite>.
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>F3897 - [Picnic by Peregine to the North Shore]. (1912)</h6>
+                        <p class="pi-description">The ferry Peregrine stops to collect passengers at Birkenhead  in the summer of 1912.</p>
+                        <p class="pi-source"><cite>From material preserved and made available by Ngā Taonga Sound &amp; Vision</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div> <!-- .section -->
@@ -200,10 +217,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-left about-image font-small"> 
-                    <span>Dr Arthur Mickle</span><br />
-                    Photo of Arthur Mickle from the notice of his death in an Auckland newspaper in 1939.<br />
-                    <cite>From Auckland Star, Volume LXX, Issue 282, 29 November 1939, Page 9.</cite>
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>Dr Arthur Mickle</h6>
+                        <p class="pi-description">Photo of Arthur Mickle from the notice of his death in an Auckland newspaper in 1939.</p>
+                        <p class="pi-source"><cite>From Auckland Star, Volume LXX, Issue 282, 29 November 1939, Page 9</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div>
@@ -212,7 +234,7 @@
 
                 <footer class="footer-postread footer-inner">
 
-                    <a class='next-cta' href="chapter-2-friends-in-active-service.html">Read the next chapter</a>
+                    <a class='next-cta' href="chapter-2-friends-in-active-service.html">Up next</a>
                     <h3 class='next-title'>Friends in active service</h3>
                     <p class='next-description'>As wife of the local doctor, Alice Mickle knew many of the families who were saying goodbye to their fathers, husbands and sons.</p>
 

@@ -34,12 +34,21 @@
                 $('#fullpage').fullpage({
                     'verticalCentered': false,
                     navigation: false,
-                    scrollingSpeed: 900
+                    scrollingSpeed: 900,
+                    afterRender: function(){
 
+                        $(".paneltrigger").toggle(function () {
+                            $(this).parent().animate({right:'0px'}, {queue: false, duration: 500});
+                        }, function () {
+                            $(this).parent().animate({right:'-420px'}, {queue: false, duration: 500});
+                        });
+
+                    }
                 });
 
             });
         </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -115,10 +124,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-right about-image font-small"> 
-                    <span>Mother's farewell to her son</span><br />
-                    Pictured here leaving Wellington, George William Thomson was one of the lucky ones to also be leaving Gallipoli, and was eventually reunited with his mother and family at the end of the war.<br />
-                    <cite>Auckland War Memorial Museum - Tāmaki Paenga Hira. PH-2003-1-36</cite>.
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>Mother's farewell to her son</h6>
+                        <p class="pi-description">Pictured here leaving Wellington, George William Thomson was one of the lucky ones to also be leaving Gallipoli, and was eventually reunited with his mother and family at the end of the war.</p>
+                        <p class="pi-source"><cite>Auckland War Memorial Museum - Tāmaki Paenga Hira. PH-2003-1-36</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div>
@@ -258,10 +272,16 @@
 
                 <!-- <div class="content-backdrop"></div> -->
 
-                <div class="info-panel info-panel-right about-image font-small"> 
-                    <span>Birkenhead and Northcote</span><br />
-                    <cite>Sir George Grey Special Collections, Auckland Libraries, NZ Map 3728</cite>.
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>Map of Birkenhead and Northcote</h6>
+                        <p class="pi-source"><cite>Sir George Grey Special Collections, Auckland Libraries, NZ Map 3728</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-black.svg" alt="Feedback" />
+                    </div>
                 </div>
+
 
             </div>
 
@@ -353,7 +373,7 @@
 
                 <footer class="footer-postread footer-inner">
 
-                    <a class='next-cta' href="chapter-3-fighting-from-the-homefront.html">Read the next chapter</a>
+                    <a class='next-cta' href="chapter-3-fighting-from-the-homefront.html">Up next</a>
                     <h3 class='next-title'>Fighting from the Home Front</h3>
                     <p class='next-description'>Those left behind were determined to “do their bit” for the war effort. Alice Mickle sent many gifts to soldiers in Europe and the Middle East.</p>
 

@@ -38,6 +38,12 @@
                     afterRender: function(){
                         //playing the video
                         $('video').get(0).play();
+
+                        $(".paneltrigger").toggle(function () {
+                            $(this).parent().animate({right:'0px'}, {queue: false, duration: 500});
+                        }, function () {
+                            $(this).parent().animate({right:'-420px'}, {queue: false, duration: 500});
+                        });
                     }
                 });
             });
@@ -124,9 +130,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-right about-image font-small"> 
-                    <span>About this video</span><br />
-                    Video description.
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>About this video</h6>
+                        <p class="pi-description">Video description.</p>
+                        <p class="pi-source"><cite>Archives New Zealand. Te Rua Mahara o te Kāwanatanga.</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div> <!-- .section -->
@@ -269,11 +281,15 @@
 
                 </div> <!-- .maincontentcontainer -->
 
-                <div class="info-panel info-panel-left about-image font-small"> 
-                    <span>BIRKENHEAD POST OFFICE</span><br />
-                    Photo of Sapper Alexander Sentch outside the Birkenhead Post Office in 1914.
-- From the Mickle album.<br />
-                    <cite>Auckland War Memorial Museum - Tāmaki Paenga Hira.</cite>
+                <div class="info-panel">
+                    <div class="info-panel-content font-small"> 
+                        <h6>Birkenhead Post Office</h6>
+                        <p class="pi-description">Photo of Sapper Alexander Sentch outside the Birkenhead Post Office in 1914. - From the Mickle album.</p>
+                        <p class="pi-source"><cite>Auckland War Memorial Museum - Tāmaki Paenga Hira.</cite>.</p>
+                    </div>
+                    <div class="paneltrigger"> 
+                       <img src="media/img/_icons/ico-info-white.svg" alt="Feedback" />
+                    </div>
                 </div>
 
             </div>
@@ -378,7 +394,7 @@
 
                 <footer class="footer-postread footer-inner">
 
-                    <a class='next-cta' href="explore-the-album.html">Next up</a>
+                    <a class='next-cta' href="explore-the-album.html">Up nex</a>
                     <h3 class='next-title'>Explore the album</h3>
                     <p class='next-description'>Browse through the scanned pages of the Alice Mickle album.</p>
 
