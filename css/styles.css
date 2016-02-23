@@ -284,9 +284,37 @@
 
                 .info-panel {
                     position: absolute;
+                    z-index: 100;
+                    min-width:300px;
+                    max-width:350px;
+                    color:#fff;
+                    border-radius:10px;
+                    padding:10px 36px;
+                    margin:1.5em;
+                }
+                .info-panel-left {
+                    bottom:0;
+                    left: 4%;
+                }
+
+                .info-panel-right {
                     bottom:0;
                     right: 0;
-                    z-index: 100;
+                }
+
+                .info-panel span {
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+
+                .info-panel cite {
+                    font-style: italic;
+                }
+
+                .about-image {
+                    /* background:#000 url('../media/img/_icons/ico-info-white.svg')  no-repeat 10px 50%; */
+                    border:1px solid #ffffff;
+                    background-color: #000;
                 }
 
                 .readable-height {
@@ -457,9 +485,8 @@
         .chapter-head-outer {
             position: relative;
             background: transparent;
-            height: 400px;
+            height: 300px;
             width: 1000px;
-            top: 0;
             margin: 0 auto;
             padding: 0;
             resize: both;
@@ -479,41 +506,50 @@
             text-align: center;
         }
 
+        #welcome .chapter-head-outer {
+            height: 300px;
+        }
+
+        #welcome .chapter-head-inner {
+            color: black;
+        }
+
+
         .chapter-head-inner h1 {
             font-family: 'LeagueGothicRegular', 'Helvetica Neue', Helvetica, sans-serif;
         }
 
         .chapter-title {
-        overflow: hidden;
+            overflow: hidden;
         }
 
         .chapter-title span {
-        display: inline-block;
-        position: relative;
+            display: inline-block;
+            position: relative;
         }
 
         .chapter-title span:before,
         .chapter-title span:after {
-        content: "";
-        position: absolute;
-        height: 5px;
-        border-top: 3px solid;
-        top: 50%;
-        width: 100%;
+            content: "";
+            position: absolute;
+            height: 5px;
+            border-top: 3px solid;
+            top: 50%;
+            width: 100%;
         }
 
         .chapter-title span:before {
-        right: 100%;
-        margin-right: 15px;
+            right: 100%;
+            margin-right: 15px;
         }
 
         .chapter-title span:after {
-        left: 100%;
-        margin-left: 15px;
+            left: 100%;
+            margin-left: 15px;
         }
 
         .chapter-head-inner p {
-            font-family: Georgia, Times, 'Times New Roman', serif;
+           /* font-family: Georgia, Times, 'Times New Roman', serif; */
         } 
 
     /* Sections
@@ -942,7 +978,7 @@
                     .gallery-trigger figure {
                         display: block;
                         float: left;
-                        margin: 0 5px 5px 0;
+                        margin: 0.75em 1em 5px 0;
              
                     }
 
@@ -1373,10 +1409,6 @@
                 .mem-cards .uc-current .uc-container{
 
                 }
-
-
-
-
 
         /* Fighting form the Home Front
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
