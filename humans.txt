@@ -2,7 +2,7 @@
 # The humans responsible & technology colophon
 
 /* TEAM */
-    Digital Content Production Manager: Gareth de Walterse.
+    Digital Content Production Manager: Gareth de Walters.
     Responsibilities: Production, UX, HTML, CSS
     Twitter: @gdewalters
     Location: Auckland, New Zealand
@@ -18,8 +18,7 @@
     Location: Auckland, New Zealand
 
     Graphic Design: Peter Haywood
-    Responsibilities: 
-    Twitter: @handle
+    Responsibilities: Digital design, icons, art direction
     Location: Auckland, New Zealand
 
     Digital Innovation Strategist: Nils Pokel
@@ -33,20 +32,13 @@
     Location: Auckland, New Zealand
 
     Curator, Pictorial: Shaun Higgins
-    Responsibilities: 
-    Twitter: @handle
-    Location: Auckland, New Zealand
-
-    Role: Name
-    Responsibilities: 
-    Twitter: @handle
+    Responsibilities: Curation, sound advice
     Location: Auckland, New Zealand
 
 /* THANKS */
 
     Researcher: Georgina
-    Twitter: @
-    FLocation: Auckland, New Zealand
+    Location: Auckland, New Zealand
 
 /* SITE */
     Last update: 2016/02/25
