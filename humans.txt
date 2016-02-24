@@ -1,21 +1,57 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+/* TEAM */
+    Digital Content Production Manager: Gareth de Walterse.
+    Responsibilities: Production, UX, HTML, CSS
+    Twitter: @gdewalters
+    Location: Auckland, New Zealand
 
-    Gareth de Walters -- Production, UX, HTML, CSS -- @gdewalters
-    Kelly Dix -- Production, UX, Image selection, copywriting -- @kelly_dix
-    Holly Grover -- Production, UX, Image design -- @holigro
-    Peter Haywood -- Concept design, icon design
-    Nils Pokel -- Image design -- @nilscreates
-    Zoe Richardson -- Pictorial Librarian
-    Shaun Higgins -- Curator, Pictorial
+    Digital Content Coordinator: Kelly Dix
+    Responsibilities: Production, Research, UX, Image selection, copywriting
+    Twitter: @kelly_dix
+    Location: Auckland, New Zealand
 
-# THANKS
+    Digital Content Coordinator: Holly Grover
+    Responsibilities: Production, UX, Image design
+    Twitter: @holigro
+    Location: Auckland, New Zealand
 
-    <name>
+    Graphic Design: Peter Haywood
+    Responsibilities: 
+    Twitter: @handle
+    Location: Auckland, New Zealand
 
-# TECHNOLOGY COLOPHON
+    Digital Innovation Strategist: Nils Pokel
+    Responsibilities: Image design
+    Twitter: @nilscreates
+    Location: Auckland, New Zealand
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Pictorial Librarian: Zoë Richardson 
+    Responsibilities: Image research, scanning, production
+    Twitter: @ZoeRichardson
+    Location: Auckland, New Zealand
+
+    Curator, Pictorial: Shaun Higgins
+    Responsibilities: 
+    Twitter: @handle
+    Location: Auckland, New Zealand
+
+    Role: Name
+    Responsibilities: 
+    Twitter: @handle
+    Location: Auckland, New Zealand
+
+/* THANKS */
+
+    Researcher: Georgina
+    Twitter: @
+    FLocation: Auckland, New Zealand
+
+/* SITE */
+    Last update: 2016/02/25
+    Standards: HTML5, CSS3
+    Components: Modernizr, jQuery, FullPage.js, Flipbook Jquery, Pfold, Photoswipe
+    Software: Sublime Text 2, Photoshop, BrightAuthor (in-gallery)
+    This project was made possible by code and articles made available by:
+        - Manoela Ilic (@crnacura)
