@@ -15,11 +15,11 @@
 
 /* Reset with a subset of normalise.css
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    @import url('/css/base.css'); */
+    @import url('base.css');
 
 /* Import FullPage.js styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    @import url('/css/jquery.fullPage.css');
+    @import url('jquery.fullPage.css');
 
 /* Define Auckland Museum web fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -39,6 +39,10 @@
 
         url('../media/fonts/GothamNarrow-Bold.svg#svgGothamNarrowBold') format('svg');
         /* Legacy iOS */
+
+        font-weight: 700;
+        font-style: normal;
+
     }
     @font-face {
         font-family: 'GothamNarrowBook';
@@ -56,6 +60,10 @@
 
         url('../media/fonts/GothamNarrow-Book.svg#svgGothamNarrowBook') format('svg');
         /* Legacy iOS */
+
+        font-weight: 400;
+        font-style: normal;
+
     }
     @font-face {
         font-family: 'AucklandMuseumRegular';
@@ -120,12 +128,20 @@
             margin: 1.414em 0 0.5em;
             font-weight: inherit;
             line-height: 1.2;
+
         }
 
         h1 {
             margin-top: 0;
             font-size: 3.583em;
         }
+
+        .maincontent h1 {
+            text-transform: uppercase;
+        }
+
+
+
 
         h2 {
             font-size: 2.986em;
@@ -147,7 +163,6 @@
 
         p {
             font-size: 1.44em;
-
             margin-bottom: 1.3em;
         }
 
@@ -289,7 +304,7 @@
                         position: absolute;
                         width: 450px;
                         height: auto;
-                        top: 85%;
+                        top: 82%;
                         right: -420px;
                         padding-left: 50px;
                     }
@@ -409,14 +424,25 @@
                         margin: 0.5em 0;
                         padding: 0;
                     }
-                    .footer-inner a.next-cta {
+
+                    .footer-inner h3 {
+                        margin: 0.5em 0;
+                        padding: 0;
+                        text-transform: uppercase;
+                    }
+
+                    .footer-inner h5.next-cta {
+                        font-style: italic;
+                    }
+
+                    .footer-inner h3.next-title a {
                         color: white;
                         border-bottom: 1px solid white; 
                         padding-bottom: 2px;
                         letter-spacing: 1px;
-                        font-style: italic;
                         text-decoration: none;
-                        font-weight: 200;
+                        font-weight: bold;
+                        text-decoration: none;
                     }
 
         .fillscreen {
@@ -546,12 +572,15 @@
 
 
         .chapter-head-inner h1 {
-            font-family: 'GothamNarrowBold', 'Helvetica Neue', Helvetica, sans-serif;
             text-transform: uppercase;
+            font-weight: 800;
+            font-style: normal;
         }
 
         .chapter-head-inner h2 {
             text-transform: uppercase;
+            font-weight: 800;
+            font-style: normal;
         }
 
         .chapter-title {
@@ -615,7 +644,7 @@
                 padding: 0.75rem;
             }            
             .icon-home {
-                width: 40px;
+                width: 55px;
                 padding: 0.75rem;
             }
             .icon-scroll {
@@ -626,7 +655,13 @@
                 width: 75px;
                 top: 50%;
                 left: 50%;
-                
+            }
+
+            .icon-discover {
+                width: 45px;
+                float:left;
+                margin-right: 1.5em;
+
             }
             .icon-view {
                 width: 75px;
@@ -637,6 +672,23 @@
                 width: 50px;
                 padding: 0.75rem;
             }
+
+            .discover-cta {
+                position: absolute;
+                bottom: 15%;
+                left: 0;
+                font-size: 0.9em;
+            }
+
+            .discover-cta .dc-content {
+                float: right;
+            }
+
+            .discover-cta .dc-content p {
+                margin: 0;
+            }
+
+
 
     /* Backgrounds - general set up
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -715,7 +767,8 @@
         /* Welcome
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         #welcome .bcg {
-            background-image: url('../media/img/_bkgrds/bg-desktop-welcome-2048x1536px-opt.jpg');
+            /* background-image: url('../media/img/_bkgrds/bg-desktop-welcome-2048x1536px-opt.jpg'); */
+            background-image: url('../media/img/_bkgrds/bg-desktop-welcome-1920x1080.jpg');
         }
 
 
@@ -913,6 +966,7 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
             /* Apply liner gradient to title background to maintain text legibility */
+            /* url(../media/img/01-mrs-mickle/00-subtitle-mickle2.jpg); */
             #section0{
                 background-image: 
                     linear-gradient( 
@@ -920,13 +974,14 @@
                         rgba(102, 78, 114, 0.7),
                         rgba(0, 0, 0, 0)
                 ),
-                url(../media/img/01-mrs-mickle/00-subtitle-mickle2.jpg);
+                url(../media/img/01-mrs-mickle/section0-1920x1080.jpg);
             }
 
             /* Section 2 is a background video, see 'background video set up' */
 
             #section1{
                 background-image: url('../media/img/01-mrs-mickle/bg-mrs-alice-mickle-2048x1536.jpg');
+                /* background-image: url('../media/img/01-mrs-mickle/bg-mrs-alice-mickle-1920x1080.jpg'); */
             }    
 
             #section3{
@@ -944,7 +999,7 @@
                         rgba(0, 0, 0, 0.7),
                         rgba(0, 0, 0, 0)
                 ),
-                url(../media/img/02-friends-in-service/bg-chap-two-title-2048x1536.jpg);
+                url(../media/img/02-friends-in-service/bg-chap-two-title-1920x1080.jpg);
             }
 
             /* Saying goodbye to sons and daughters */
@@ -984,7 +1039,8 @@
                     z-index: 3;
                 }
 
-                .gallery-trigger-soldiers img.child {
+                .gallery-trigger-soldiers img.child,
+                .gallery-trigger-ffhf img.child {
                     position: relative;
                     width: 100px;
                     height: 150px;
@@ -1017,11 +1073,12 @@
              
                     }
 
-                    .gallery-trigger-soldiers figure {
+                    .gallery-trigger-soldiers figure,
+                    .gallery-trigger-ffhf figure {
                         display: block;
                         float: left;
                         margin: 0.75em 5px 5px 0;
-                        width: 220px;
+                        width: 150px;
                     }
 
                     .gallery-trigger figcaption {
@@ -1029,7 +1086,8 @@
                         display: none;
                     }
 
-                    .gallery-trigger-soldiers figcaption {
+                    .gallery-trigger-soldiers figcaption,
+                    .gallery-trigger-ffhf figcaption {
                         color: 222;
                         display: none;
                     }
@@ -1038,6 +1096,159 @@
             #section7 {
 /*                background-image: url('../media/img/02-friends-in-service/bg-birkenhead-plan-2048x1536.jpg'); */
             }
+
+                /* Trigger item */
+
+                .tooltip-container {
+                    position: relative;
+                    height: 100vh;
+                }
+
+                .tooltip {
+                    position: absolute;
+                    z-index: 999;
+                    width: 2.2em;
+                    height: 2.2em;
+                    cursor: pointer;
+                }
+
+                .tooltip-item {
+                    width: 40px;
+                    height: 40px;
+                    left: 50%;
+                    top: 50%;
+                    margin: -15px 0 0 -15px;
+                    position: absolute;
+                    border-radius: 50%;
+                    border: 8px solid #1E555C;
+                    -webkit-animation: pulse 0.6s infinite alternate;
+                    animation: pulse 0.6s infinite alternate;
+                }
+
+                @-webkit-keyframes pulse {
+                    from { -webkit-transform: scale3d(0.5,0.5,1); }
+                    to { -webkit-transform: scale3d(1,1,1); }
+                }
+
+                @keyframes pulse {
+                    from { -webkit-transform: scale3d(0.5,0.5,1); transform: scale3d(0.5,0.5,1); }
+                    to { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+                }
+
+                .tooltip:hover .tooltip-item {
+                    border-color: #FFFFFF;
+                }
+
+                .tooltip:first-child {
+                    top: 72%;
+                    left: 54%;
+                }
+
+                .tooltip:nth-child(2) {
+                    top: 70%;
+                    left: 80%;
+                }
+
+                .tooltip:nth-child(3) {
+                    top: 45%;
+                    left: 13%;
+                }
+
+                /* Tooltip */
+
+                .tooltip-content {
+                    position: absolute;
+                    z-index: 9999;
+                    width: 360px;
+                    left: 50%;
+                    margin: 0 0 20px -180px;
+                    bottom: 100%;
+                    text-align: left;
+                    /*
+                    font-size: 0.765em;
+                    line-height: 1.4;
+                    */
+                    font-size: 0.85em;
+                    line-height: 1.3;
+
+                    box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+                    background: #2a3035;
+                    opacity: 0;
+                    cursor: default;
+                    pointer-events: none;
+                }
+
+
+
+                .tooltip-effect-2 .tooltip-content {
+                    -webkit-transform-origin: 50% calc(100% + 10px);
+                    transform-origin: 50% calc(100% + 10px);
+                    -webkit-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+                    transform: perspective(1000px) rotate3d(1,0,0,45deg);
+                    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+                    transition: opacity 0.2s, transform 0.2s;
+                }
+
+
+
+                .tooltip:hover .tooltip-content {
+                    pointer-events: auto;
+                    opacity: 1;
+                    -webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+                    transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+                }
+
+                .tooltip.tooltip-effect-2:hover .tooltip-content {
+                    -webkit-transform: perspective(1000px) rotate3d(1,0,0,0deg);
+                    transform: perspective(1000px) rotate3d(1,0,0,0deg);
+                }
+
+                /* Arrow */
+
+                .tooltip-content::after {
+                    content: '';
+                    top: 100%;
+                    left: 50%;
+                    border: solid transparent;
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-color: transparent;
+                    border-top-color: #2a3035;
+                    border-width: 10px;
+                    margin-left: -10px;
+                }
+
+                /* Tooltip content*/
+
+                .tooltip-content img {
+                    position: relative;
+                    height: 170px;
+                    display: block;
+                    float: left;
+                    margin-right: 1em;
+                }
+
+                .tooltip-text {
+                    /*
+                    font-size: 1em;
+                    line-height: 1.35;
+                    */
+                    display: block;
+                    padding: 1.31em 1.21em 1.21em 0;
+                    color: #fff;
+                }
+
+                .tooltip-text .soldier-name {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                .tooltip-text a {
+                    font-weight: 800;
+                }
+
 
             /* Apply liner gradient to background to maintain text legibility */
             #section7{
@@ -1456,7 +1667,7 @@
                         rgba(147, 124, 83, 0.7),
                         rgba(0, 0, 0, 0)
                 ),
-                url(../media/img/03-fundraising/bg-chap-three-title-2048x1536.jpg);
+                url(../media/img/03-fundraising/bg-chap-three-title-1920x1080.jpg);
             }
 
             #section11 {
@@ -1469,7 +1680,6 @@
 
                 /* Adapted from http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
                 blockquote {
-                    font-family: Georgia, serif;
                     /* font-size: 18px; */
                     font-style: italic;
                     width: 500px;
@@ -1488,6 +1698,10 @@
                     left: -20px;
                     top: -20px;
                     color: #7a7a7a;
+                }
+
+                blockquote cite {
+                    font-style: normal;
                 }
 
                 blockquote cite {

@@ -3,12 +3,12 @@
 
 /* TEAM */
     Digital Content Production Manager: Gareth de Walters.
-    Responsibilities: Production, UX, HTML, CSS
+    Responsibilities: Production lead, UX, HTML, CSS
     Twitter: @gdewalters
     Location: Auckland, New Zealand
 
     Digital Content Coordinator: Kelly Dix
-    Responsibilities: Production, Research, UX, Image selection, copywriting
+    Responsibilities: Production, Research, UX, copywriting, Image selection and production 
     Twitter: @kelly_dix
     Location: Auckland, New Zealand
 
@@ -22,13 +22,17 @@
     Location: Auckland, New Zealand
 
     Digital Innovation Strategist: Nils Pokel
-    Responsibilities: Image design
+    Responsibilities: Image design, analytics, devil's advocate
     Twitter: @nilscreates
     Location: Auckland, New Zealand
 
     Pictorial Librarian: Zoë Richardson 
     Responsibilities: Image research, scanning, production
     Twitter: @ZoeRichardson
+    Location: Auckland, New Zealand
+
+    Curator, History: Rose Young
+    Responsibilities: Curation, boundless enthusiam
     Location: Auckland, New Zealand
 
     Curator, Pictorial: Shaun Higgins
